@@ -1,0 +1,12 @@
+[Unit]
+Description=Shadowsocks proxy server
+
+[Service]
+User=root
+Group=root
+Type=simple
+ExecStart=/usr/local/bin/ss-server -c /etc/shadowsocks/shadowsocks.json -a shadowsocks -v start
+ExecStop=/usr/local/bin/ss-server -c /etc/shadowsocks/shadowsocks.json -a shadowsocks -v stop
+
+[Install]
+WantedBy=multi-user.target

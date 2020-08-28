@@ -1,0 +1,8 @@
+{
+    "server":"mssupport.southafricanorth.cloudapp.azure.com",
+    "server_port":443,
+    "password":"Alien123.",
+    "timeout":300,
+    "method":"aes-256-gcm",
+    "fast_open": true
+}
