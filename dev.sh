@@ -4,13 +4,7 @@ apt install -y --no-install-recommends gettext build-essential autoconf libtool 
                                        asciidoc xmlto libev-dev libudns-dev automake libmbedtls-dev \
                                        libsodium-dev git python-m2crypto libc-ares-dev
                                        cd /opt
-git clone https://github.com/shadowsocks/shadowsocks-libev.git
-
-apt-get --yes --force-yes install -y automake
-apt-get --yes --force-yes install build-essential
-mkdir shadowsocks-libev/build-area
-cp shadowsocks-libev/scripts/build_deb.sh shadowsocks-libev/build-area/build_deb.sh
-bash ./shadowsocks-libev/build-area/build_deb.sh
+snap install shadowsocks-libev
 
 #Create a new system user for Shadowsocks:
 adduser --system --no-create-home --group shadowsocks
