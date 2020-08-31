@@ -22,4 +22,4 @@ apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io
 
 docker pull shadowsocks/shadowsocks-libev
-docker run -e PASSWORD=Alien123. -p443:8388 -p443:8388/udp -d shadowsocks/shadowsocks-libev
+docker run -e PASSWORD=<> -p443:8388 -p443:8388/udp -d shadowsocks/shadowsocks-libev
